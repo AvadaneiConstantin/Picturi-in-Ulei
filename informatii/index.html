@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #e8ffff 0%, #ebebff 100%);
+}
+
+.containerNavigator {
+    position: relative;
+    right: 70px;
+    top: 30px;
+}
+
+.binding {
+    background: #FFF;
+    transition: 2.8s;
+    text-align: center;
+}
+
+.binding p {
+    font-size: 22px;
+    color: #b899de;
+    padding: 15px 30px;
+    text-shadow: 1px 1px 1px #585858;
+}
+
+.binding p:hover {
+    color: #8c6bcc;
+}
+
+.binding a {
+    text-decoration: none;
+    color: #585858;
+}
+
+.effect1,
+.effect2 {
+    position: relative;
+    float: right;
+    transition: .4s;
+}
+
+.effect1 {
+    box-shadow: -5px 1px 5px -5px #333;
+}
+
+.effect1:hover {
+    box-shadow: 0 0 0 0 #333;
+}
+
+.effect1:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 0px;
+    width: 60%;
+    top: 80%;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+
+.effect1:hover:before {
+    animation: dispareUmbraAdresaUnu 1s forwards;
+}
+
+@keyframes dispareUmbraAdresaUnu {
+    100% {
+        bottom: 35px;
+    }
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~ adresa 2 */
+
+.effect2:after {
+    right: 10px;
+    left: auto;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 50%;
+    top: 80%;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.effect2:hover:after {
+    display: none;
+}
+
+.effect2 {
+    box-shadow: 5px 1px 5px -5px #333;
+}
+
+.effect2:hover {
+    box-shadow: 0 0 0 0 #333;
+}
+
+
+/*text informatii picturi*/
+
+.text {
+    text-indent: 45px;
+    background-image: url(6.jpg);
+    width: 90%;
+    background-size: cover;
+    margin-top: 120px;
+    box-shadow: 1px 2px 5px grey;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #4A4545;
+    border-bottom: 1px solid #4A4545;
+    padding: 30px;
+    display: inline-block;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.text p {
+    color: #181818;
+    font-size: 30px;
+    font-family: Gabriola, sans-serif;
+}
+
+.poza {
+    padding: 30px 0;
+    background-size: cover;
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.poza img {
+    box-shadow: 1px 2px 5px grey;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #4A4545;
+    border-bottom: 1px solid #4A4545;
+}
+
+</style>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Picturi-Informaţii</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="Shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div class="containerNavigator">
+        <div class="binding effect2">
+            <a href="../contact/contact.html">
+                <p>Contact</p>
+            </a>
+        </div>
+        <div class="binding effect1">
+            <a href="../index.html">
+                <p>Acasă</p>
+            </a>
+        </div>
+    </div>
+    <div class="text">
+        <p>Picturi pe pânză ce pot aduce un plus de frumuseţe, creativitate, originalitate şi personalitate,
+            reprezentând deasemenea un cadou ideal care va rezista in timp şi frumuseţe. <br>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎Picturile sunt realizate manual pe pânză de in de cea mai buna calitate şi sunt tratate cu grund profesional
+            ce oferă o bună aderenţă, utilizând pigmenţi consistenţi
+            selectaţi din gamele profesionale care oferă o bună rezistenţă în timp şi expunere la lumină. 
+        </p>
+    </div>
+    <div class="poza">
+        <a><img src="pictura1.jpg" width="95%" height="100%"></a>
+    </div>
+</body>
+</html>
